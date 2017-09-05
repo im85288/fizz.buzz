@@ -44,7 +44,15 @@ public class FizzBuzz {
      * @return - String
      */
     public String getParsedOutput() {
-        Stream stream = getResultStream();
+        return getParsedOutput(getResultStream());
+    }
+
+    /**
+     * Retrieve the parsed output using the given stream
+     * @param stream
+     * @return
+     */
+    public String getParsedOutput(Stream stream){
         return dumpResult(stream);
     }
 
@@ -69,7 +77,7 @@ public class FizzBuzz {
         return i -> getValue(i);
     }
 
-    private Stream getResultStream() {
+    protected Stream getResultStream() {
         return IntStream.rangeClosed(startRange, endRange)
                 .mapToObj(getResult());
     }
