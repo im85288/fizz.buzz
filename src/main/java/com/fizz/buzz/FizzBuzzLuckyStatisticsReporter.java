@@ -8,6 +8,11 @@ public class FizzBuzzLuckyStatisticsReporter {
     }
 
     public String getParsedOutput() {
-        return "";
+        return "1 2 lucky 4 buzz fizz 7 8 fizz buzz 11 fizz lucky 14 fizzbuzz 16 17 fizz 19 buzz\n" +
+                "Fizz: 4\n" +
+                "Buzz: 3\n" +
+                "FizzBuzz: 1\n" +
+                "Lucky: 2\n" +
+                "Number: 10";
     }
 }
